@@ -123,7 +123,7 @@ var addIframe = function(codeEl, support, iframeId) {
     iframeSrc = previewUrl;
   } else {
     iframeSrc = 'data:text/html;charset=utf-8,' +
-      encodeURIComponent('<!doctype html><html><head></head></body>' +
+      encodeURIComponent('<!doctype html><html><head></head></ body >' +
         codeEl.textContent);
   }
   iframeEl.setAttribute('src', iframeSrc);
